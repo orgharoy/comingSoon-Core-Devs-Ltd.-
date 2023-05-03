@@ -10,7 +10,7 @@ export default function SubscriptionForm() {
 
     e.preventDefault();
 
-    if (validate(email) === false) {
+    if (!validate(email)) {
       setAlertClass('alert-validate');
       return;
     }
